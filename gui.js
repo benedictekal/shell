@@ -78,7 +78,7 @@ function toc(msg) {
 }
 
 // Add syntax highlihjting to the textarea
-var editor = CodeMirror.fromTextArea(commandsElm, {
+/*var editor = CodeMirror.fromTextArea(commandsElm, {
     mode: 'text/x-mysql',
     viewportMargin: Infinity,
     indentWithTabs: true,
@@ -90,7 +90,7 @@ var editor = CodeMirror.fromTextArea(commandsElm, {
 			"Ctrl-Enter": execEditorContents,
 			"Ctrl-S": savedb,
 		}
-});
+});*/
 
 // Load a db from a file
 dbFileElm.onchange = function() {
