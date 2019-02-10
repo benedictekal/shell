@@ -101,7 +101,8 @@ dbFileElm.onchange = function() {
 		worker.onmessage = function () {
 			toc("Loading database from file");
 			// Show the schema of the loaded database
-			editor.setValue("SELECT `name`, `sql`\n  FROM `sqlite_master`\n  WHERE type='table';");
+			//editor.setValue("SELECT `name`, `sql`\n  FROM `sqlite_master`\n  WHERE type='table';");
+			editor.value = "SELECT `name`, `sql` FROM `sqlite_master` WHERE type='table';");
 			execEditorContents();
 		};
 		tic();
