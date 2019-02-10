@@ -78,6 +78,7 @@ function toc(msg) {
 }
 
 // Add syntax highlihjting to the textarea
+var editor = document.getElementById("commands");
 /*var editor = CodeMirror.fromTextArea(commandsElm, {
     mode: 'text/x-mysql',
     viewportMargin: Infinity,
