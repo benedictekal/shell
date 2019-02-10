@@ -6,7 +6,7 @@ var dbFileElm = document.getElementById('dbfile');
 var savedbElm = document.getElementById('savedb');
 
 // Start the worker in which sql.js will run
-var worker = new Worker("../js/worker.sql.js");
+var worker = new Worker("js/worker.sql.js");
 worker.onerror = error;
 
 // Open a database
