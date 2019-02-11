@@ -64,7 +64,8 @@ var tableCreate = function () {
 // Execute the commands when the button is clicked
 function execEditorContents () {
 	noerror()
-	execute (editor.getValue() + ';');
+	//execute (editor.getValue() + ';');
+	execute (editor.value + ';');
 }
 execBtn.addEventListener("click", execEditorContents, true);
 
